@@ -1,17 +1,16 @@
-package db
+package services
 
-import models.Post
-import utils.Util
-import java.util.*
+import models.*
 import kotlin.math.*
 
 
 // в дз 5 это будет заменено на обращения в базу, пока все в оперативке
-class DataService {
+class PostService {
 
     private val posts = mutableListOf<Post>()
 
-    fun createPost(post: Post): Post {
+    fun createPost(data: PostCreateModel, authorId: String): Post {
+        val post = Post(content = data.content, authorId = authorId)
         posts.add(post)
         return post
     }
