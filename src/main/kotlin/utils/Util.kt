@@ -5,8 +5,7 @@ import java.time.format.DateTimeFormatter
 
 class Util {
     companion object {
-        fun getCurrentDate(): String {
-            // Обновленный формат с миллисекундами
+        fun getCurrentDateTime(): String {
             return LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS"))
         }
     }

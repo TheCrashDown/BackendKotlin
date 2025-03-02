@@ -16,6 +16,10 @@ dependencies {
     implementation("io.ktor:ktor-server-content-negotiation:3.0.2")
     implementation("io.ktor:ktor-serialization-kotlinx-json:3.0.2")
 
+    implementation("io.ktor:ktor-server-auth:3.0.2")
+    implementation("io.ktor:ktor-server-auth-jwt:3.0.2")
+    implementation("org.mindrot:jbcrypt:0.4")
+
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.0")
 }
 
